@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA</h1>
+
+<script>
+
+// **Definición de funciones**
+
+//Función saltarLinea agrega 2 saltos de línea con las etiquetas <br>
+	function saltarLinea()
+		{
+			document.write("<br><br>")
+		}
+
+//Función imprimir muestra el texto que le hayamos pasado y tambien invoca a la función saltarLinea al mismo tiempo
+	function imprimir(frase)
+	{
+		document.write(frase)
+		saltarLinea();
+	}
+
+// **************************************************
+
+
+// Definición de Variables
+	var anho = 2025;
+
+// Operaciones con código
+
+	imprimir("Juan tiene: " + (anho-2005) + " años");
+
+	imprimir("Pedro tiene: " + (anho-2010) + " años");
+
+	imprimir("Carlos tiene: " + (anho-1995) + " años");
+
+</script>
+
+
+
+
