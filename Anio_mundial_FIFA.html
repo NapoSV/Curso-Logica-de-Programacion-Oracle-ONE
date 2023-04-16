@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1><center>PROGRAMA AÑO MUNDIAL DE LA FIFA</center></h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");		
+	}  
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+
+    var anioMundial = 1930;
+    var totalMundiales = 0;
+    var limiteAnioMundial = parseInt(prompt("Ingrese el año limite para consultar los Mundiales 🏆⚽"));
+
+    imprimir ("Listado de copas mundiales de Futbol 🏆⚽");
+    imprimir ("<hr>");
+
+    while (anioMundial <= limiteAnioMundial){
+        totalMundiales = totalMundiales + 1
+            imprimir ("Hubo mundial FIFA en el año " + anioMundial);
+        anioMundial = anioMundial + 4;
+    }
+    
+    imprimir ("<br>");
+    imprimir ("<hr>");
+    imprimir ("En total se han realizado " + totalMundiales + " Copas Mundiales de Futbol 🏆⚽");
+
+</script>
+
+

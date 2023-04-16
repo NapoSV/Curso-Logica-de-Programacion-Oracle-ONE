@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1><center>Impresion de asteriscos o estrellas con ciclo For</center></h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");	
+	}  
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+    // Nomenclatura de ciclo FOR
+    // for (inicializar variable a iterar; condicion hasta donde llegará la iteracion; contador o sumatoria de incremento hasta llegar al final){}
+
+    for(lineas = 1 ; lineas <= 3; lineas++ ){
+        for(columnas = 1 ; columnas <= 10; columnas++ ){
+            document.write("*");
+        }
+        saltarLinea();
+    }
+
+    saltarLinea()
+
+    imprimir("Fin")
+	
+</script>
+
+

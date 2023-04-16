@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1><center>Impresión de numeros pares hasta el 100/center></h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");		
+	}  
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+    var contador = 2;
+    var limiteImpresion = parseInt (prompt("Ingrese el límite de impresión de números pares"));
+
+    while (contador <= limiteImpresion){
+        imprimir(contador);
+        contador+= 2
+    }
+    
+    imprimir ("<br><hr>");
+    imprimir ("FIN");
+
+</script>
+
+

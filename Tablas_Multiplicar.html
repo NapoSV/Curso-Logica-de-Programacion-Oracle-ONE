@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<h1><center>PROGRAMA CALCULAR LAS TABLAS DE MULTIPLICAR</center></h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");		
+	}  
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+    var multiplicador = 1;
+    var multiplicando = parseInt (prompt ("Ingrese el número de la tabla a repasar"));
+
+    imprimir ("Tabla del " + multiplicando + " con ciclo While");
+    imprimir ("<hr>");
+
+    while (multiplicador <= 10){
+        imprimir(multiplicando + " x " + multiplicador + " = " + (multiplicando * multiplicador));
+        multiplicador++;
+    }
+
+    imprimir ("<br>");
+    imprimir ("Tabla del " + multiplicando + " con ciclo For");
+    imprimir ("<hr>");
+
+    for (multiplicador = 1 ; multiplicador <= 10; multiplicador++){
+        imprimir(multiplicando + " x " + multiplicador + " = " + (multiplicando * multiplicador));
+    }
+
+</script>
+
+
